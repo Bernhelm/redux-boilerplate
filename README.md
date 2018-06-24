@@ -11,7 +11,7 @@ You only need <b>node.js</b> pre-installed and you’re good to go.
 ## Download
 Download in current directory
 ```sh
-$ curl -L -o master.zip https://github.com/Bernhelm/redux-boilerplate/archive/initial.zip && unzip master.zip && rm master.zip && mv ./redux-boilerplate-master/{.,}* ./ && rm -r ./redux-boilerplate-master
+$ curl -L -o master.zip https://github.com/Bernhelm/redux-boilerplate/archive/master.zip && unzip master.zip && rm master.zip && mv ./redux-boilerplate-master/{.,}* ./ && rm -r ./redux-boilerplate-master
 ```
 
 ## Setup
