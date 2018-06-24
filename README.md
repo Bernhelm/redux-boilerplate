@@ -1,20 +1,17 @@
-Webpack 4 Boilerplate
+Redux Boilerplate
 ===========
 
-[![Dependency Status](https://david-dm.org/cvgellhorn/webpack-boilerplate.svg)](https://david-dm.org/cvgellhorn/webpack-boilerplate) 
-[![devDependency Status](https://david-dm.org/cvgellhorn/webpack-boilerplate/dev-status.svg)](https://david-dm.org/cvgellhorn/webpack-boilerplate)
+> Redux Boilerplate with Webpack, Babel, SASS, mocha, istambul, express on board
 
-> Plain webpack 4 boilerplate with Babel, SASS and lodash on board
+Credits to Christoph von Gellhorn. This boilerplate is based on [webpack-boilerplate](https://github.com/cvgellhorn/webpack-boilerplate)
 
 ## Requirements
-You only need <b>node.js</b> pre-installed and you’re good to go. 
-
-If you don’t want to work with lodash, just remove it from the node packages and the webpack config.
+You only need <b>node.js</b> pre-installed and you’re good to go.
 
 ## Download
 Download in current directory
 ```sh
-$ curl -L -o master.zip https://github.com/cvgellhorn/webpack-boilerplate/archive/master.zip && unzip master.zip && rm master.zip && mv ./webpack-boilerplate-master/{.,}* ./ && rm -r ./webpack-boilerplate-master
+$ curl -L -o master.zip https://github.com/Bernhelm/redux-boilerplate/archive/initial.zip && unzip master.zip && rm master.zip && mv ./redux-boilerplate-master/{.,}* ./ && rm -r ./redux-boilerplate-master
 ```
 
 ## Setup
@@ -24,9 +21,9 @@ $ npm install
 ```
 
 ## Development
-Run the local webpack-dev-server with livereload and autocompile on [http://localhost:8080/](http://localhost:8080/)
+Run the local webpack-dev-server with livereload and autocompile on [http://localhost:9000/](http://localhost:9000/)
 ```sh
-$ npm run dev
+$ npm start
 ```
 ## Deployment
 Build the current application

@@ -1,10 +1,10 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "boilerplate-redux",
   "version": "1.0.1",
-  "description": "Webpack Boilerplate with Babel, SASS, mocha, istambul and lodash on board",
+  "description": "Redux Boilerplate with Webpack, Babel, SASS, mocha, istambul, express on board",
   "author": "Alberto García Mora",
   "license": "MIT",
-  "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
+  "homepage": "https://github.com/Bernhelm/redux-boilerplate.git",
   "scripts": {
     "prestart": "npm install",
     "start": "parallelshell 'npm run start:webpack' 'npm run start:watch' 'npm run start:express'",
