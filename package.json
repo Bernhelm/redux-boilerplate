@@ -1,38 +1,68 @@
 {
   "name": "webpack-boilerplate",
-  "version": "4.0.0",
-  "description": "Plain webpack 4 Boilerplate with Babel, SASS and lodash on board",
-  "author": "Christoph von Gellhorn",
+  "version": "1.0.0",
+  "description": "Webpack Boilerplate with Babel, SASS, mocha, istambul and lodash on board",
+  "author": "Alberto García Mora",
   "license": "MIT",
   "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
   "scripts": {
+    "start": "npm run dev",
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
-    "build": "webpack -p --progress --mode production --config webpack.config.build.js"
+    "build": "webpack -p --progress --mode production --config webpack.config.build.js",
+    "test": "cross-env NODE_ENV=test nyc mocha --require test/setup.js app/**/*.spec.js",
+    "test:watch": "cross-env NODE_ENV=test nyc mocha --require test/setup.js app/**/*.spec.js --watch"
   },
   "repository": {
     "type": "git",
     "url": "https://cvgellhorn@github.com/cvgellhorn/webpack-boilerplate.git"
   },
   "dependencies": {
-    "lodash": "4.17.10"
+    "lodash": "4.17.10",
+    "redux": "4.0.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-loader": "7.1.4",
+    "babel-plugin-istanbul": "4.1.6",
     "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
     "clean-webpack-plugin": "0.1.19",
     "cross-env": "5.2.0",
     "css-loader": "0.28.11",
     "expect": "23.1.0",
     "file-loader": "1.1.11",
     "html-webpack-plugin": "3.2.0",
+    "jsdom": "11.11.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "5.2.0",
     "node-sass": "4.9.0",
+    "nyc": "12.0.2",
     "sass-loader": "7.0.3",
     "style-loader": "0.21.0",
     "url-loader": "1.0.1",
     "webpack": "4.12.0",
     "webpack-cli": "3.0.8",
     "webpack-dev-server": "3.1.4",
-    "webpack-merge": "4.1.3"
+    "webpack-merge": "4.1.3",
+    "webpack-node-externals": "1.7.2"
+  },
+  "nyc": {
+    "require": [
+      "babel-register"
+    ],
+    "include": [
+      "app/**/*.js"
+    ],
+    "exclude": [
+      "app/**/*.spec.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "instrument": false,
+    "sourceMap": false,
+    "report-dir": "./coverage",
+    "temp-directory": "./log"
   }
 }
