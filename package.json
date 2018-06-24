@@ -6,10 +6,10 @@
   "license": "MIT",
   "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
   "scripts": {
+    "prestart": "npm install",
     "start": "parallelshell 'npm run start:webpack' 'npm run start:watch'",
     "start:webpack": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
     "start:watch": "parallelshell 'npm run watch:test'",
-
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
     "build": "webpack -p --progress --mode production --config webpack.config.build.js",
     "test": "cross-env NODE_ENV=test nyc mocha --require test/setup.js app/**/*.spec.js",
