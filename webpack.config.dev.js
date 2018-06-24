@@ -12,6 +12,11 @@ module.exports = merge(webpackConfig, {
     },
 
     devServer: {
+        port: 9000,
+        compress: true, // enable gzip compression
+        historyApiFallback: true, // true for index.html upon 404, object for multiple paths
+        https: false, // true for self-signed, object for cert authority
+        noInfo: true, // only errors & warns on hot reload
         host: '0.0.0.0'
     }
 

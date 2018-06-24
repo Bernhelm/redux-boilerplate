@@ -1,0 +1,19 @@
+{
+    "require": [
+      "babel-register"
+    ],
+    "include": [
+      "app/**/*.js"
+    ],
+    "exclude": [
+      "app/**/*.spec.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "instrument": false,
+    "sourceMap": false,
+    "report-dir": "./coverage",
+    "temp-directory": "./log"
+}
