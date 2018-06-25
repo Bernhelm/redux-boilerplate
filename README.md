@@ -1,7 +1,7 @@
 Redux Boilerplate
 ===========
 
-> Redux Boilerplate with Webpack, Babel, SASS, mocha, istambul, express on board
+> Redux Boilerplate with Webpack, Babel, SASS, mocha, istambul and express on board
 
 Credits to Christoph von Gellhorn. This boilerplate is based on [webpack-boilerplate](https://github.com/cvgellhorn/webpack-boilerplate)
 

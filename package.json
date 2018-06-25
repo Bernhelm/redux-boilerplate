@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-redux",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redux Boilerplate with Webpack, Babel, SASS, mocha, istambul, express on board",
   "author": "Alberto García Mora",
   "license": "MIT",
@@ -31,6 +31,7 @@
     "babel-core": "6.26.3",
     "babel-loader": "7.1.4",
     "babel-plugin-istanbul": "4.1.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
     "clean-webpack-plugin": "0.1.19",
